@@ -1,0 +1,24 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    box-sizing: inherit;
+    font-family: $lato;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-color:  $deep-orange-lighten-5;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.container{
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+}

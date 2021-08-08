@@ -1,0 +1,133 @@
+.navegacion {
+    position: relative;
+    padding: 1rem 0;
+    color: $blanco;
+    text-align: center;
+    background-color: $light-blue-darken-4;
+    border-bottom: .1rem solid $blanco;
+}
+
+.navegacion-contenido {
+
+    @include phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion-titulo {
+        margin-bottom: 1rem;
+        letter-spacing: .1rem;
+        text-shadow: 0 .3rem .1rem $oscuro-0;
+        font-weight: $bold;
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .carrito-icono {
+        .icono {
+            width: 5rem;
+            filter: invert(1);
+            transition: transform .3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+
+            @include phone {
+                width: 3rem;
+            }
+        }
+    }
+}
+
+
+.carrito-contenido {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+    color: $light-blue-darken-4;
+    background-color: $light-blue-darken-1;
+    transform: translateX(100%); 
+    transition: all .3s ease-in-out;
+
+    @include tablet{
+        width: 90%;
+    }
+    @include laptop{
+        width: 60%;
+    }
+    @include desktop{
+        max-width: 50rem;
+        width: 50%;
+    }
+
+    .carrito-tabla {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        
+            th, td {          
+                padding: .5rem;
+                font-size: .9rem;    
+                font-weight: $bold;
+                color: $blanco;
+                border: .1rem solid $light-blue-darken-4;
+            }
+            th{
+                text-transform: uppercase;
+                background-color: $deep-orange-darken-1;
+            }
+            td:last-child{
+                background-color: $deep-orange-darken-1;
+            }
+
+            img{
+                width: 5rem;
+                height: 4rem;
+            }
+
+        .remover-curso{
+            display: block;
+            font-weight: 700;
+            font-size: 1.5rem;
+            width: 75%;
+            background: $deep-orange-darken-1;
+            border: .1rem solid $blanco;
+            border-radius: .3rem;
+            color: $blanco;
+            margin: 0 auto 1rem auto;
+        }
+        .agregar-curso{
+            display: block;
+            font-weight: 700;
+            font-size: 1.5rem;
+            width: 75%;
+            background: $light-blue-darken-4;
+            border: .1rem solid $blanco;
+            border-radius: .3rem;
+            color: $blanco;
+            margin:  auto;
+        }
+
+        .remover-curso:hover, .agregar-curso:hover{
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            transform: scale(1.2);
+        }
+
+
+
+    }
+}
+.mostrar-carrito{
+    transition: all .3s ease-in-out;
+    transform: translateX(0);
+    margin-right:.5rem;
+}

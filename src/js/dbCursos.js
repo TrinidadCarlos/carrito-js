@@ -1,0 +1,341 @@
+const dataCursos = [
+  {
+    categoria: "Computación",
+    "COMPUTO-1": {
+      "id": "C1",
+      "cantidad": 1,
+      "imagen-curso": "./img/computo/aprende-excel-desde-cero.png",
+      "imagen-curso-webp": "./img/computo/aprende-excel-desde-cero.webp",
+      "titulo-curso": "Aprende excel desde cero",
+      "descripcion-curso":
+        "En este curso aprenderás a usar excel de una manera más profesional! Agrega valor a tu C.V.",
+      "precio-curso": "500.00",
+      "total": "500.00",
+      "calificacion": 3,
+      "autor": "Rafael medina",
+    },
+    "COMPUTO-2": {
+      "id": "C2",
+      "cantidad": 1,
+      "imagen-curso": "./img/computo/diseno-web.webp",
+      "imagen-curso-webp": "./img/computo/diseno-web.jpg",
+      "titulo-curso": "Aprende diseño web desde cero",
+      "descripcion-curso":
+        "El diseño web hoy en día es importante asi como aprender a manejarlo y tener oportunidades dentro del área de la informatica",
+      "precio-curso": "850.99",
+      "total": "850.99",
+      "calificacion": 4,
+      "autor": "Ernesto gómez",
+    },
+    "COMPUTO-3": {
+      "id": "C3",
+      "cantidad": 1,
+      "imagen-curso": "./img/computo/hacker-de-basico-a-avanzado.jpg",
+      "imagen-curso-webp": "./img/computo/hacker-de-basico-a-avanzado.webp",
+      "titulo-curso": "Aprende hacking desde las bases",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "2000.00",
+      "total": "2000.00",
+      "calificacion": 4,
+      "autor": "Raúl padilla",
+    },
+    "COMPUTO-4": {
+      "id": "C4",
+      "cantidad": 1,
+      "imagen-curso": "./img/computo/introduccion-a-la-computacion.jpg",
+      "imagen-curso-webp": "./img/computo/introduccion-a-la-computacion.webp",
+      "titulo-curso": "Aprende a usar una computadora",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "310.99",
+      "total": "310.99",
+      "calificacion": 5,
+      "autor": "Florencia marquéz",
+    },
+    "COMPUTO-5": {
+      "id": "C5",
+      "cantidad": 1,
+      "imagen-curso":
+        "./img/computo/mantenimieto-a-laptops-y-equipos-de-escritorio.jpg",
+      "imagen-curso-webp":
+        "./img/computo/mantenimieto-a-laptops-y-equipos-de-escritorio.webp",
+      "titulo-curso": "Repara tus equipos, aprende y emprende",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1500.00",
+      "total": "1500.00",
+      "calificacion": 4,
+      "autor": "Daniela jaramillo",
+    },
+  },
+  {
+    categoria: "Belleza",
+    "BELLEZA-1": {
+      "id": "B1",
+      "cantidad": 1,
+      "imagen-curso": "./img/belleza/cuidados-de-la-piel.jpg",
+      "imagen-curso-webp": "./img/belleza/cuidados-de-la-piel.webp",
+      "titulo-curso": "Aprende a cuidar tu piel",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1200.00",
+      "total": "1200.00",
+      "calificacion": 3,
+      "autor": "Manuel martínez",
+    },
+    "BELLEZA-2": {
+      "id": "B2",
+      "cantidad": 1,
+      "imagen-curso": "./img/belleza/curso-de-maquillaje.jpg",
+      "imagen-curso-webp": "./img/belleza/curso-de-maquillaje.webp",
+      "titulo-curso": "Luce espectacular. conoce como usar el maquillaje",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "900.00",
+      "total": "900.00",
+      "calificacion": 4,
+      "autor": "Nadia gómez",
+    },
+    "BELLEZA-3": {
+      "id": "B3",
+      "cantidad": 1,
+      "imagen-curso": "./img/belleza/introduccion-al-body-paint.jpg",
+      "imagen-curso-webp": "./img/belleza/introduccion-al-body-paint.webp",
+      "titulo-curso": "Aprende el arte del body paint",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "2100.00",
+      "total": "2100.00",
+      "calificacion": 5,
+      "autor": "Hernesto fernández",
+    },
+    "BELLEZA-4": {
+      "id": "B4",
+      "cantidad": 1,
+      "imagen-curso": "./img/belleza/introduccion-al-haircut.jpg",
+      "imagen-curso-webp": "./img/belleza/introduccion-al-haircut.webp",
+      "titulo-curso": "Iniciate en el mundo del haircut",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1500.00",
+      "total": "1500.00",
+      "calificacion": 4,
+      "autor": "María sandoval",
+    },
+    "BELLEZA-5": {
+      "id": "B5",
+      "cantidad": 1,
+      "imagen-curso": "./img/belleza/mascarillas-y-tratamientos.jpg",
+      "imagen-curso-webp": "./img/belleza/mascarillas-y-tratamientos.webp",
+      "titulo-curso": "Cuida tu piel, cabello, uñas, y más!",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1700.00",
+      "total": "1700.00",
+      "calificacion": 4,
+      "autor": "Yolanda garcía",
+    },
+  },
+  {
+    categoria: "Administracion",
+    "ADMINISTRACION-1": {
+      "id": "A1",
+      "cantidad": 1,
+      "imagen-curso": "./img/administracion/aprenda-office.jpg",
+      "imagen-curso-webp": "./img/administracion/aprenda-office.webp",
+      "titulo-curso": "Domine las herramientas básicas y mejore su C.V.",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "2200.00",
+      "total": "2200.00",
+      "calificacion": 5,
+      "autor": "Esperanza saldivar",
+    },
+    "ADMINISTRACION-2": {
+      "id": "A2",
+      "cantidad": 1,
+      "imagen-curso": "./img/administracion/como-ser-mas-productivo.jpg",
+      "imagen-curso-webp": "./img/administracion/como-ser-mas-productivo.webp",
+      "titulo-curso": "Aprende tips para administrar su tiempo",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1000.00",
+      "total": "1000.00",
+      "calificacion": 3,
+      "autor": "Magdalena del valle",
+    },
+    "ADMINISTRACION-3": {
+      "id": "A3",
+      "cantidad": 1,
+      "imagen-curso": "./img/administracion/curso-de-liderazgo.jpg",
+      "imagen-curso-webp": "./img/administracion/curso-de-liderazgo.jpg",
+      "titulo-curso": "Lidere de manera eficiente",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "2500.00",
+      "total": "2500.00",
+      "calificacion": 4,
+      "autor": "Manuel chairez",
+    },
+    "ADMINISTRACION-4": {
+      "id": "A4",
+      "cantidad": 1,
+      "imagen-curso":
+        "./img/administracion/herramientas-para-matenerte-actualizado.jpg",
+      "imagen-curso-webp":
+        "./img/administracion/herramientas-para-matenerte-actualizado.webp",
+      "titulo-curso": "Conoce, aprende y domina aplicaciones utiles",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "3000.00",
+      "total": "3000.00",
+      "calificacion": 5,
+      "autor": "Maribel maldonado",
+    },
+    "ADMINISTRACION-5": {
+      "id": "A5",
+      "cantidad": 1,
+      "imagen-curso":
+        "./img/administracion/tips-para-la-oficina-o-home-office.jpg",
+      "imagen-curso-webp":
+        "./img/administracion/tips-para-la-oficina-o-home-office.webp",
+      "titulo-curso": "Aprende a organizar tus espacios",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1000.00",
+      "total": "1000.00",
+      "calificacion": 3,
+      "autor": "Camila rodríguez",
+    },
+  },
+  {
+    categoria: "Gastronimía",
+    "COCINA-1": {
+      "id": "G1",
+      "cantidad": 1,
+      "imagen-curso": "./img/comida/aprende-a-realizar-ricos-postres.jpg",
+      "imagen-curso-webp": "./img/comida/aprende-a-realizar-ricos-postres.webp",
+      "titulo-curso": "Cocina deliciosos postres",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "3000.00",
+      "total": "3000.00",
+      "calificacion": 5,
+      "autor": "Carlos lópez",
+    },
+    "COCINA-2": {
+      "id": "G2",
+      "cantidad": 1,
+      "imagen-curso": "./img/comida/desayunos-para-cada-dia-de-la-semana.jpg",
+      "imagen-curso-webp":
+        "./img/comida/desayunos-para-cada-dia-de-la-semana.webp",
+      "titulo-curso": "Realiza distintos desayunos cada día por un mes!",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "2200.00",
+      "total": "2200.00",
+      "calificacion": 4,
+      "autor": "Marisol gutierrez",
+    },
+    "COCINA-3": {
+      "id": "G3",
+      "cantidad": 1,
+      "imagen-curso":
+        "./img/comida/primeros-pasos-para-tu-negocio-de-alimentos.jpg",
+      "imagen-curso-webp":
+        "./img/comida/primeros-pasos-para-tu-negocio-de-alimentos.webp",
+      "titulo-curso": "Recibe las bases y tips para tu negocio",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "4000.00",
+      "total": "4000.00",
+      "calificacion": 5,
+      "autor": "Andrea y Manuel",
+    },
+    "COCINA-4": {
+      "id": "G4",
+      "cantidad": 1,
+      "imagen-curso": "./img/comida/ser-mas-saludable.jpg",
+      "imagen-curso-webp": "./img/comida/ser-mas-saludable.webp",
+      "titulo-curso": "Cocina rico y cuidate a ti y a tu familia",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "900.00",
+      "total": "900.00",
+      "calificacion": 4,
+      "autor": "Cocina saludable",
+    },
+  },
+
+  {
+    categoria: "Otros",
+
+    "AHORRAR-1": {
+      "id": "A1",
+      "cantidad": 1,
+      "imagen-curso": "./img/otros/aprende-a-ahorrar-agua.jpg",
+      "imagen-curso-webp": "./img/otros/aprende-a-ahorrar-agua.webp",
+      "titulo-curso": "Aprende a cuidar el agua",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "500.00",
+      "total": "500.00",
+      "calificacion": 4,
+      "autor": "CONAGUA",
+    },
+    "MASCOTAS-1": {
+      "id": "M1",
+      "cantidad": 1,
+      "imagen-curso": "./img/otros/cuidado-de-mascotas.jpg",
+      "imagen-curso-webp": "./img/otros/cuidado-de-mascotas.webp",
+      "titulo-curso": "Cuidados para mascotas",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1200.00",
+      "total": "1200.00",
+      "calificacion": 5,
+      "autor": "Veterinaria PETFRIENDS",
+    },
+    "ARTES-1": {
+      "id": "ART1",
+      "cantidad": 1,
+      "imagen-curso": "./img/otros/curso-de-dibujo-basico-intermedio.jpg",
+      "imagen-curso-webp": "./img/otros/curso-de-dibujo-basico-intermedio.webp",
+      "titulo-curso": "Aprende tecnicas de dibujo, y coloreo",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "1900.00",
+      "total": "1900.00",
+      "calificacion": 4,
+      "autor": "Ana bernal",
+    },
+    "FINANZAS-1": {
+      "id": "F1",
+      "cantidad": 1,
+      "imagen-curso": "./img/otros/introduccion-a-las-finanzas-personales.jpg",
+      "imagen-curso-webp":
+        "./img/otros/introduccion-a-las-finanzas-personales.webp",
+      "titulo-curso": "Aprende a administrar tus ingresos",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "3600.00",
+      "total": "3600.00",
+      "calificacion": 5,
+      "autor": "Rogelio colorado",
+    },
+    "EJERCICIO-1": {
+      "id": "E1",
+      "cantidad": 1,
+      "imagen-curso": "./img/otros/rutinas-de-ejercicio.jpg",
+      "imagen-curso-webp": "./img/otros/rutinas-de-ejercicio.webp",
+      "titulo-curso": "Pierde peso con danza, taebo y más!",
+      "descripcion-curso":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas, sunt ab quo quidem minus.",
+      "precio-curso": "2500.00",
+      "total": "2500.00",
+      "calificacion": 5,
+      "autor": "Raúl y Gabriela",
+    },
+  },
+];

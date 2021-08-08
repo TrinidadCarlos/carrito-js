@@ -1,0 +1,41 @@
+.webp .header{
+    background: $deep-orange-darken-4 url('../img/header.webp') no-repeat center/cover ;
+}
+.no-webp .header{
+    background: $deep-orange-darken-4 url('../img/header.jpg') no-repeat center/cover ;
+}
+
+.header{
+    width: 100%;
+    padding: 0 2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1rem solid $deep-orange-darken-4;
+    
+    @include tablet{
+        justify-content: flex-end;
+    }
+}
+
+.header-contenido{
+    max-width: 30rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    color: $deep-orange-lighten-5;
+    background-color: $light-blue-darken-4;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+    border: .1rem solid $blanco;
+    box-shadow: 0 0 1rem $deep-orange-darken-1;
+
+    .header-titulo{
+        margin-bottom: 1rem;
+        text-shadow: 0 0 .2rem $oscuro-0;
+    }
+    
+
+}
+
